@@ -17,6 +17,8 @@ public class Demo7_ProducerAndConsumer {
         }
     }
 
+    // The take() method is used to retrieve and remove the head of this queue.
+    // If queue is empty then it will wait until an element becomes available
     public static void consumer() throws InterruptedException {
         Random rand = new Random();
         while (true) {
